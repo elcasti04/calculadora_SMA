@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Nota Final</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora Nota Final</h1>
+    <p>!Descubre cuanto necesitas en tu ultima nota!</p>
+    <p>Consulta tus notas en la pagina de la <a href="https://sma.unicartagena.edu.co:8443/Smaix12/" target="_blank" >SMA</a></p>
+
+    <div class="form-notas">
+        <label for="nota1"> primer nota 20%
+            <input id="nota1" type="number" placeholder="primer nota">
+        </label>
+        <label for="nota2"> segunda nota 20%
+            <input id="nota2" type="number" placeholder="segunda nota">
+        </label>
+        <label for="nota3"> tercer nota 20%
+            <input id="nota3" type="number" placeholder="tercer nota">
+        </label>
+        <label for="notaMin"> nota minima para aprovar
+            <input id="notaMin" type="number" value='3.0'>
+        </label>
+
+        <button id="calcular">Calcular</button>
+    </div>
+    <div class="nota-final">
+        <div>
+            <h2>Acumulado hasta ahora</h2>
+            <p id="acumulado"></p>
+        </div>
+        <div>
+            <h2>Nota para aprovar</h2>
+            <p id="nota"></p>
+        </div>
+        <p id="mensaje"></p>
+    </div>
+
+    <footer>Andres Castro | 2026</footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
